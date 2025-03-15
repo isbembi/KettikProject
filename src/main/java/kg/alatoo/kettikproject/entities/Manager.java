@@ -14,7 +14,7 @@ import java.util.List;
 public class Manager {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)//autoincrements value of id
-    Long id;
+    long id;
 
     String name;
     String department;

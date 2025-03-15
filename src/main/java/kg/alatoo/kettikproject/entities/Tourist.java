@@ -14,7 +14,7 @@ import java.util.Set;
 public class Tourist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    long id;
 
     String name;
     String email;

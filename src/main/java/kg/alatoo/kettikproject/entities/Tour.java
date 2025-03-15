@@ -15,7 +15,7 @@ import java.util.Set;
 public class Tour {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    long id;
 
     String name;
     String description;
