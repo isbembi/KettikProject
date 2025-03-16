@@ -6,7 +6,8 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@Value
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor(force = true)
 @AllArgsConstructor
@@ -17,7 +18,9 @@ public class Manager {
     long id;
 
     String name;
-    String department;
+    String surname;
+    String email;
+    String phoneNumber;
 
     @OneToMany(mappedBy = "manager")
     List<Tour> managedTours = List.of();

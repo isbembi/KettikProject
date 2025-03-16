@@ -2,12 +2,11 @@ package kg.alatoo.kettikproject.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.util.List;
 import java.util.Set;
 
 @Entity
-@Value
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor(force = true)
 @AllArgsConstructor
@@ -32,4 +31,5 @@ public class Tour {
 
     @ManyToMany
     Set<Tourist> tourists= Set.of();
+    
 }

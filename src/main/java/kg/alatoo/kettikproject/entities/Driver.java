@@ -6,7 +6,8 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@Value
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor(force = true)
 @AllArgsConstructor
@@ -17,8 +18,9 @@ public class Driver {
     Long id;
 
     String name;
-    String vehicleType;
-    int experienceYears;
+    String surname;
+    String vehicleNumber;
+    int experienceYear;
 
     @OneToMany(mappedBy = "driver")
     @Builder.Default

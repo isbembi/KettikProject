@@ -6,7 +6,8 @@ import lombok.*;
 import java.util.Set;
 
 @Entity
-@Value
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor(force = true)
 @AllArgsConstructor
@@ -17,6 +18,7 @@ public class Tourist {
     long id;
 
     String name;
+    String surname;
     String email;
     String phoneNumber;
 
